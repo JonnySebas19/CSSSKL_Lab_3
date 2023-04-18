@@ -98,13 +98,13 @@ public class Date
 
     //prints out date
     public void report(){
-        System.out.printf("%d/%d/%d",month, day, year);
+        System.out.printf("%d.%d.%d",month, day, year);
     }
 
     //Returns the date
     @Override
     public String toString(){
-        return this.month + "/" + this.day + "/" + this.year;
+        return this.month + "." + this.day + "." + this.year;
     }
     @Override
     public boolean equals(Object obj){
