@@ -4,7 +4,7 @@ Numerators and denominators are unchangeable once set by the constructor.
 No denominator will be stored as a 0. (i.e., no DivideByZero Exceptions).
 A Fraction is always in reduced form (reduce in the constructor to ensure this).
  */
-public final class Fraction {
+public class Fraction {
     public final int numerator;
     public final int denominator;
 
@@ -20,12 +20,15 @@ public final class Fraction {
         if (otherFraction != null){
             this.numerator = otherFraction.numerator;
             this.denominator = otherFraction.denominator;
+        } else {
+            this.numerator = 0;
+            this.denominator = 1;
         }
     }
-    public double getNum(){
+    public int getNum(){
         return this.numerator;
     }
-    public double getDenom(){
+    public int getDenom(){
         return this.denominator;
     }
     @Override
