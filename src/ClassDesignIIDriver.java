@@ -23,8 +23,8 @@ public class ClassDesignIIDriver {
         //dateDriver();
         //shapeDriver();
         //charListDriver();
-        lineSegmentDriver();
-        //immutableFractionDriver();
+        //lineSegmentDriver();
+        immutableFractionDriver();
         //math2Driver();
         //passByReferenceDemo();
     }
@@ -73,7 +73,7 @@ public class ClassDesignIIDriver {
 
     public static void lineSegmentDriver() {
         System.out.println("uncomment the code to use the lineSegmentDriver");
-        /*LineSegment a = new LineSegment();
+        LineSegment a = new LineSegment();
         LineSegment b = new LineSegment(new Point2D(1,1), new Point2D(2,2));
         LineSegment c = new LineSegment(b);
         a.setStartPoint(new Point2D(3,3));
@@ -85,12 +85,10 @@ public class ClassDesignIIDriver {
         System.out.println("Does a equal b? " + a.equals(b));
         System.out.println("Does a equal c? " + a.equals(c));
         System.out.println("Does b equal c? " + b.equals(c));
-            */
     }
 
     public static void immutableFractionDriver() {
         System.out.println("uncomment the code to use the immutableFractionDriver");
-        /*
         Fraction a = new Fraction(1,2);
         Fraction b = new Fraction(3,4);
         Fraction c = new Fraction(b);
@@ -111,7 +109,6 @@ public class ClassDesignIIDriver {
         System.out.println("c:"+c.toString());
         System.out.println("a.equals(b):" + a.equals(b));
         System.out.println("b.equals(c):" + b.equals(c));
-        */
     }
 
     private static void math2Driver() {
