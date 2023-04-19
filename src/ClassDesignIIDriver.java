@@ -21,9 +21,9 @@ public class ClassDesignIIDriver {
     public static void main(String[] args) {
         //uncomment the desired Driver or Demo below and run this code to test your progress
         //dateDriver();
-        shapeDriver();
+        //shapeDriver();
         //charListDriver();
-        //lineSegmentDriver();
+        lineSegmentDriver();
         //immutableFractionDriver();
         //math2Driver();
         //passByReferenceDemo();
@@ -43,7 +43,6 @@ public class ClassDesignIIDriver {
 
     private static void shapeDriver() {
         System.out.println("uncomment the code to use the shapeDriver");
-
         Shape a = new Shape();
         Shape b = new Shape(10,10, Color.DARK_GRAY);
         Shape c = new Shape(b);
@@ -52,12 +51,11 @@ public class ClassDesignIIDriver {
         System.out.println("a: " +a.toString());
         System.out.println("b: " +b.toString());
         System.out.println("c: " +c.toString());
-
     }
 
     private static void charListDriver() {
         System.out.println("uncomment the code to use the charListDriver");
-        /*CharList a = new CharList();
+        CharList a = new CharList();
         CharList b = new CharList("Batman");
         CharList c = new CharList(b);
         a.add('k');
@@ -66,12 +64,11 @@ public class ClassDesignIIDriver {
         a.add('n');
         a.add('i');
         a.add('s');
-        System.out.println("a is :"+a.toString() +" and has " + a.size() + "chars");
-        System.out.println("b is :"+b.toString() +" and has " + b.size() + "chars");
-        System.out.println("c is :"+c.toString() +" and has " + c.size() + "chars");
+        System.out.println("a is :"+a.toString() +" and has " + a.size() + " chars");
+        System.out.println("b is :"+b.toString() +" and has " + b.size() + " chars");
+        System.out.println("c is :"+c.toString() +" and has " + c.size() + " chars");
         System.out.println("B and A are equal : " + b.equals(a));
         System.out.println("B and C are equal : " + b.equals(c));
-        */
     }
 
     public static void lineSegmentDriver() {
