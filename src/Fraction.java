@@ -9,6 +9,15 @@ public class Fraction {
     public final int denominator;
 
     public Fraction(int numerator, int denominator) {
+        while (numerator % 2 == 0 && denominator % 2 == 0) {
+            numerator /= 2;
+            denominator /= 2;
+        }
+        while (numerator % 3 == 0 && denominator % 3 == 0) {
+            numerator /= 3;
+            denominator /= 3;
+        }
+
          this.numerator = numerator;
         if (denominator == 0) {
             this.denominator = 1;
@@ -18,8 +27,20 @@ public class Fraction {
     }
     public Fraction(Fraction otherFraction){
         if (otherFraction != null){
-            this.numerator = otherFraction.numerator;
-            this.denominator = otherFraction.denominator;
+
+            int numerator = otherFraction.getNum();
+            int denominator = otherFraction.getDenom();
+
+            while (numerator % 2 == 0 && denominator % 2 == 0) {
+                numerator /= 2;
+                denominator /= 2;
+            }
+            while (numerator % 3 == 0 && denominator % 3 == 0) {
+                numerator /= 3;
+                denominator /= 3;
+            }
+            this.numerator = numerator;
+            this.denominator = denominator;
         } else {
             this.numerator = 0;
             this.denominator = 1;

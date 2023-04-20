@@ -19,15 +19,12 @@ public class ClassDesignIIDriver {
     private final int foo = -1; //used in one of the mutator functions below
 
     public static void main(String[] args) {
-        //uncomment the desired Driver or Demo below and run this code to test your progress
         //dateDriver();
         //shapeDriver();
         //charListDriver();
         //lineSegmentDriver();
         //immutableFractionDriver();
-        //Figure out reduce fractions!!!
-
-        math2Driver();
+        //math2Driver();
         //passByReferenceDemo();
     }
 
@@ -134,6 +131,31 @@ public class ClassDesignIIDriver {
         System.out.println("a is :" + a);
         System.out.println("b is :" + b);
     }
+    /*
+    What is the primary difference between passing a primitive
+    to a method versus passing an object?
+
+    The main difference is that when you are passing in an object, you are
+    passing in the reference to that object. This makes it so that the method that
+    obtains that passed in object, can now change things made to that object. But,
+    with a primitive, you are passing in just the value of that variable... Essentially
+    making a copy of it so that we can do other things with it and not affect the original
+    Passing in primitive is "Pass by value", passing in an object is "Pass by Reference"
+
+    When a primitive is passed to a method, does the scope of that
+    primitive change (i.e., grow to include the called method)?
+
+    No, the scope of that primitive does not go out of where it was declared.
+
+    What about when an object is passed to a method?
+
+    Yes, the scope of that object is now inside of that method too.
+
+    How then would you describe the scope of an object that has been
+    passed to a method?
+
+    The scope of an object can change based on where it is being passed into
+     */
 
     public static void mutate(int z) {
         //does it matter that I called my input data "z" here ?

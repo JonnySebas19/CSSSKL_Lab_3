@@ -1,8 +1,8 @@
 /**
- * Write a description of class Date here.
+ * Holds and gives function to a Single Date
  *
- * @author Meng
- * @version 9/30/2018
+ * @author Jonathan Sebastiani
+ * @version 4/19/2023
  */
 public class Date
 {
